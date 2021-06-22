@@ -1,0 +1,138 @@
+body {
+  height: 100%;
+  margin-top: 0;
+}
+
+#wrapper {
+  padding-left: 0;
+  width: 100%;
+  align-items: stretch;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 50px 15px;
+}
+
+
+/* Nav Announcements */
+
+.announcement-heading {
+  font-size: 50px;
+  margin: 0;
+}
+
+.announcement-text {
+  margin: 0;
+}
+
+/* Table Headers */
+
+table.tablesorter thead {
+  cursor: pointer;
+}
+
+table.tablesorter thead tr th:hover {
+  background-color: #f5f5f5;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+  display: block;
+  height: 400px;
+}
+
+.flot-chart-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* The side navigation menu */
+.sidebar {
+  min-height: 100vh;
+	width: 225px;
+  margin: 0;
+  padding: 0;
+  background-color: #91A8A4;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 50px;
+}
+
+.sidebar .sidebar-header {
+  padding: 20px;
+  background: #91A8A4;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #677C79;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Edit Below to Customize Widths > 768px */
+@media (min-width:768px) {
+
+  /* Wrappers */
+
+  #wrapper {
+    /*display: flex;*/
+    width: 100%;
+	  padding-left: 0;
+  }
+
+  #page-wrapper {
+	padding-left: 250px;
+
+  }
+
+  /* Side Nav */
+
+  .navbar-collapse {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+}
